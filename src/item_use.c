@@ -965,7 +965,7 @@ static void Task_UseRepel(u8 taskId)
     #if VAR_LAST_REPEL_LURE_USED != 0
         VarSet(VAR_LAST_REPEL_LURE_USED, gSpecialVar_ItemId);
     #endif
-        RemoveUsedItem();
+        //RemoveUsedItem(); // comment out if you don't want number of repels in bag to decrease
         if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
             DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
         else
@@ -1612,6 +1612,46 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
         // TODO: handle key items with callbacks to menus allow to be used by registering them.
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
     }
+}
+
+void ItemUseOutOfBattle_PartyHeal(u8 taskId)
+{
+    if (gTasks[taskId].tUsingRegisteredKeyItem != TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_PartyHeal;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_PartyHeal;
+        SetUpItemUseOnFieldCallback(taskId);
+        //GetItemFieldFunc(gSpecialVar_ItemId)(taskId);
+    }
+}
+
+static void ItemUseOnFieldCB_PartyHeal(u8 taskId)
+{
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(PartyHealScript);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_InfCandy(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_RareCandy;
+    SetUpItemUseCallback(taskId);
+}
+
+void ItemUseOutOfBattle_InfRepel(u8 taskId)
+{
+    if (REPEL_STEP_COUNT == 0)
+        gTasks[taskId].func = Task_StartUseRepel;
+    else if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelEffectsLingered, CloseItemMessage);
+    else
+        DisplayItemMessageInBattlePyramid(taskId, gText_RepelEffectsLingered, Task_CloseBattlePyramidBagMessage);
 }
 
 #undef tUsingRegisteredKeyItem

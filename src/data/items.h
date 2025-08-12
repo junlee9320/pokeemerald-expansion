@@ -14141,4 +14141,52 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_PARTY_HEAL] =
+    {
+        .name = _("Party Healer"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A magical big\n"
+            "potion that heals\n"
+            "the whole party."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PartyHeal,
+        .iconPic = gItemIcon_LargePotion,
+        .iconPalette = gItemIconPalette_FullRestore,
+    },
+
+    [ITEM_INF_CANDY] =
+    {
+        .name = _("Infinite Candy"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A magical candy\n"
+            "that can increase\n"
+            "levels forever."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_InfCandy,
+        .iconPic = gItemIcon_RareCandy,
+        .iconPalette = gItemIconPalette_RareCandy,
+    },
+
+    [ITEM_INF_REPEL] =
+    {
+        .name = _("Infinite Repel"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A magical spray\n"
+            "that forever repels\n"
+            "wild Pokemon."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_InfRepel,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_MaxRepel,
+    },
 };

@@ -49,6 +49,10 @@ void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8 taskId);
 void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField);
 void ItemUseOutOfBattle_PokeFlute(u8 taskId);
 void ItemUseOutOfBattle_TownMap(u8 taskId);
+void ItemUseOutOfBattle_PartyHeal(u8 taskId);
+static void ItemUseOnFieldCB_PartyHeal(u8 taskId);
+void ItemUseOutOfBattle_InfCandy(u8 taskId);
+void ItemUseOutOfBattle_InfRepel(u8 taskId);
 
 enum {
     BALL_THROW_UNABLE_TWO_MONS,

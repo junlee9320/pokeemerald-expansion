@@ -5715,7 +5715,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
         gPartyMenuUseExitCallback = TRUE;
         UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
-        RemoveBagItem(gSpecialVar_ItemId, 1);
+        //RemoveBagItem(gSpecialVar_ItemId, 1); //comment out if you don't want number of rare candies in the bag to decrease
         GetMonNickname(mon, gStringVar1);
         if (sFinalLevel > sInitialLevel)
         {

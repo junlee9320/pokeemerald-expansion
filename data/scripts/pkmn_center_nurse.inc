@@ -131,3 +131,12 @@ Movement_PkmnCenterNurse_Bow:
 Movement_PkmnCenterNurse_Turn:
 	walk_in_place_faster_left
 	step_end
+
+PartyHealScript::
+	special HealPlayerParty
+	msgbox PartyHealText, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PartyHealText::
+	.string "Party has been fully healed.$"
