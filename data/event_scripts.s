@@ -1102,6 +1102,15 @@ EventScript_VsSeekerChargingDone::
 	releaseall
 	end
 
+PartyHealScript::
+	special HealPlayerParty
+	msgbox PartyHealText, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PartyHealText::
+	.string "Party has been fully healed.$"
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"

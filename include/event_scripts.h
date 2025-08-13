@@ -685,5 +685,8 @@ extern const u8 EventScript_LostSignal[];
 extern const u8 EventScript_TooDark[];
 extern const u8 EventScript_MovedTooFast[];
 
+// custom made
+extern const u8 PartyHealScript[];
+
 
 #endif // GUARD_EVENT_SCRIPTS_H
