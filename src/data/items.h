@@ -2177,7 +2177,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAX_REPEL] =
     {
         .name = _("Max Repel"),
-        .price = (I_PRICE >= GEN_7) ? 900 : 700,
+        .price = (I_PRICE >= GEN_7) ? 1 : 1,
         .holdEffectParam = 250,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
