@@ -134,6 +134,7 @@ Route119_EventScript_GiveFlyHM::
 
 Route119_EventScript_RivalExitScottArrive::
 	closemessage
+	setflag FLAG_BEAT_WEATHER_INST_RIVAL
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_SetRivalPos1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_SetRivalPos2
 	removeobject LOCALID_ROUTE119_RIVAL

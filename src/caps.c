@@ -9,15 +9,25 @@ u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[][2] =
     {
+        {FLAG_BEAT_PETALBURG_WOODS_AQUA_GRUNT, 10},
         {FLAG_BADGE01_GET, 15},
-        {FLAG_BADGE02_GET, 19},
-        {FLAG_BADGE03_GET, 24},
-        {FLAG_BADGE04_GET, 29},
-        {FLAG_BADGE05_GET, 31},
-        {FLAG_BADGE06_GET, 33},
-        {FLAG_BADGE07_GET, 42},
-        {FLAG_BADGE08_GET, 46},
-        {FLAG_IS_CHAMPION, 58},
+        {FLAG_STEVEN_GRANITE_CAVE_TALKED, 21},
+        {FLAG_BADGE02_GET, 25},
+        {FLAG_BEAT_ROUTE_110_RIVAL, 29},
+        {FLAG_BADGE03_GET, 35},
+        {FLAG_BEAT_MT_CHIMNEY_MAXIE, 40},
+        {FLAG_BADGE04_GET, 44},
+        {FLAG_BADGE05_GET, 50},
+        {FLAG_BEAT_WEATHER_INST_RIVAL, 58},
+        {FLAG_BADGE06_GET, 64},
+        {FLAG_BEAT_MAGMA_HIDEOUT_MAXIE, 69},
+        {FLAG_BEAT_AQUA_HIDEOUT_MATT, 72},
+        {FLAG_BADGE07_GET, 76},
+        {FLAG_BEAT_SPACE_CENTER_MAXIE_TABITHA, 78},
+        {FLAG_BEAT_SEAFLOOR_CAVERN_ARCHIE, 83},
+        {FLAG_BADGE08_GET, 88},
+        {FLAG_BEAT_VICTORY_ROAD_WALLY, 95},
+        {FLAG_IS_CHAMPION, 99},
     };
 
     u32 i;

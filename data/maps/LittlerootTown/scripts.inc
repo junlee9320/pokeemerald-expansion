@@ -900,6 +900,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 
 	giveitem ITEM_PARTY_HEAL
+	giveitem ITEM_SUPER_ROD
 	
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT

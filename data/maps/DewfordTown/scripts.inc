@@ -12,6 +12,7 @@ DewfordTown_EventScript_Briney::
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
+	addvar VAR_DEWFORD_GYM_STATE, 0
 	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
 	switch VAR_RESULT
 	case 0, DewfordTown_EventScript_ChoosePetalburg
@@ -28,9 +29,14 @@ DewfordTown_EventScript_ChoosePetalburg::
 	end
 
 DewfordTown_EventScript_ChooseSlateport::
-	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
+	goto_if_eq VAR_DEWFORD_GYM_STATE, 1, DewfordTown_EventScript_SailToSlateport
+	goto_if_eq VAR_DEWFORD_GYM_STATE, 0, DewfordTown_EventScript_GetBadgeBeforeSlateport
+	release
+	end
+
+DewfordTown_EventScript_GetBadgeBeforeSlateport::
+	msgbox DewfordTown_Text_GoBeatBrawlyFirst, MSGBOX_DEFAULT
 	closemessage
-	goto DewfordTown_EventScript_SailToSlateport
 	release
 	end
 
@@ -143,6 +149,8 @@ DewfordTown_EventScript_SailToPetalburg::
 	end
 
 DewfordTown_EventScript_SailToSlateport::
+	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
+	closemessage
 	call EventScript_BackupMrBrineyLocation
 	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
 	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 1
@@ -789,3 +797,7 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+DewfordTown_Text_GoBeatBrawlyFirst:
+	.string "We can go to Slateport after you've\n"
+	.string "gotten the Dewford Gym badge!$"

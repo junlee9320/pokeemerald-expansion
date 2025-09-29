@@ -228,12 +228,29 @@ Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wattrel @ Oran Berry
+Level: 10
+Ability: Wind Power
+Nature: Timid
+- Electroweb
+- Tailwind
+
+Mudbray
+Level: 10
+Ability: Stamina
+Nature: Adamant
+- Bulldoze
+- Rock Smash
+
+Rookidee
+Level: 10
+Ability: Unnerve
+Nature: Adamant
+- Aerial Ace
+- Roost
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -2119,13 +2136,20 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Skiddo
+Level: 9
+Ability: Sap Sipper
+Nature: Adamant
+- Razor Leaf
+
+Charcadet
+Level: 9
+Ability: Flash Fire
+Nature: Timid
+- Incinerate
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -2523,13 +2547,22 @@ Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
 Music: Rich
-Items: Full Restore
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gimmighoul_Chest
+Level: 12
+Ability: Rattled
+Nature: Sassy
+- Reflect
+- Light Screen
+
+Goomy
+Level: 12
+Ability: Hydration
+Nature: Modest
+- Chilling Water
+- Dragon Breath
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -4794,33 +4827,38 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion / Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
-
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
-
-Nosepass @ Oran Berry
+Silicobra @ Smooth Rock
 Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
+Ability: Sand Spit
+Nature: Adamant
+- Glare
+- Dig
+
+Diglett_Alola @ Passho Berry
+Level: 15
+Ability: Sand Veil
+Nature: Jolly
+- Metal Claw
+- Sand Tomb
+
+Tyrunt @ Salac Berry
+Level: 15
+Ability: Strong Jaw
+Nature: Adamant
+- Thunder Fang
+- Ice Fang
+- Fire Fang
+
+Minior @ Wacan Berry
+Level: 15
+Ability: Shields Down
+Nature: Naive
+- Acrobatics
 - Rock Tomb
+- U-Turn
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -5249,12 +5287,21 @@ Class: School Kid
 Pic: School Kid F
 Gender: Female
 Music: Girl
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Shroomish
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Qwilfish_Hisui
+Level: 13
+Ability: Poison Point
+Nature: Adamant
+- Poison Sting
+- Fell Stinger
+
+Riolu
+Level: 13
+Ability: Prankster
+Nature: Bold
+- Screech
 
 === TRAINER_GEORGIA ===
 Name: GEORGIA
@@ -5949,20 +5996,17 @@ Music: Male
 Double Battle: Yes
 AI: Basic Trainer
 
-Cetoddle @ Oran Berry
+Cetoddle
 Level: 8
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Thick Fat
 Nature: Calm
 - Helping Hand
 
-Maschiff @ Oran Berry
+Maschiff
 Level: 8
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Intimidate
 Nature: Adamant
 - Bite
-- Tackle
 
 === TRAINER_BILLY ===
 Name: BILLY
@@ -5970,16 +6014,22 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rattata_Alola
+Level: 9
+Ability: Hustle
+Nature: Adamant
+- Bite
+- Quick Attack
 
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Zigzagoon_Galar
+Level: 9
+Ability: Pickup
+Nature: Adamant
+- Tail Whip
+- Tackle
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -5987,13 +6037,22 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Gible
+Level: 14
+Ability: Sand Veil
+Nature: Modest
+- Sand Tomb
+- Sandstorm
+
+Rolycoly
+Level: 14
+Ability: Steam Engine
+Nature: Calm
+- Ancient Power
+- Incincerate
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6001,16 +6060,21 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Larvitar
+Level: 14
+Ability: Sand Veil
+Nature: Adamant
+- Dragon Dance
+- Rock Slide
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Wooper_Paldea
+Level: 14
+Ability: Poison Point
+Nature: Calm
+- Mud Shot
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -6018,12 +6082,22 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Machop
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rattata_Alola @ Salac Berry
+Level: 13
+Ability: Gluttony
+Nature: Adamant
+- Bite
+- Facade
+
+Rattata_Alola @ Liechi Berry
+Level: 13
+Ability: Gluttony
+Nature: Adamant
+- Sucker Punch
+- Quick Attack
 
 === TRAINER_BEN ===
 Name: BEN
@@ -6223,16 +6297,20 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewpider
+Level: 8
+Ability: Water Bubble
+Nature: Bold
+- Icy Wind
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke_Galar
+Level: 8
+Ability: Own Tempo
+Nature: Quiet
+- Swift
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -6337,20 +6415,21 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mareanie
+Level: 12
+Ability: Merciless
+Nature: Modest
+- Venoshock
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grimer_Alola
+Level: 12
+Ability: Poison Touch
+Nature: Modest
+- Sludge
+- Mud Slap
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -8815,15 +8894,21 @@ Pic: Twins
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Check Bad Move
+AI: Basic Trainer
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pawmi
+Level: 12
+Ability: Static
+Nature: Adamant
+- Nuzzle
+- Fake Out
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rufflet
+Level: 12
+Ability: Sheer Force
+Nature: Adamant
+- Rock Smash
+- Wing Attack
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -10580,16 +10665,21 @@ Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Yamask_Galar
+Level: 14
+Ability: Wandering Spirit
+Nature: Adamant
+- Sandstorm
+- Astonish
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Glimmet
+Level: 14
+Ability: Toxic Debris
+Nature: Timid
+- Ancient Power
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -11073,16 +11163,21 @@ Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Toedscool
+Level: 8
+Ability: Mycelium Might
+Nature: Sassy
+- Spore
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fletchling
+Level: 8
+Ability: Big Pecks
+Nature: Adamant
+- Peck
+- Quick Attack
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -11090,16 +11185,22 @@ Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Popplio
+Level: 12
+Ability: Liquid Voice
+Nature: Modest
+- Disarming Voice
+- Draining Kiss
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chespin
+Level: 12
+Ability: Bulletproof
+Nature: Adamant
+- Vine Whip
+- Pin Missile
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -11277,16 +11378,20 @@ Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rellor
+Level: 8
+Ability: Compound Eyes
+Nature: Adamant
+- Rollout
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tadbulb
+Level: 8
+Ability: Static
+Nature: Timid
+- Thunder Wave
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -11294,24 +11399,21 @@ Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nymble
+Level: 10
+Ability: Tinted Lens
+Nature: Adamant
+- First Impression
+- Bug Bite
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scatterbug
+Level: 10
+Ability: Friend Guard
+Nature: Calm
+- Rage Powder
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -11319,16 +11421,23 @@ Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Vivillon
+Level: 13
+Ability: Compound Eyes
+Nature: Modest
+- Sleep Powder
+- Air Cutter
+- Struggle Bug
 
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Geodude_Alola
+Level: 13
+Ability: Sturdy
+Nature: Modest
+- Spark
+- Smack Down
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -11383,16 +11492,21 @@ Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Teddiursa
+Level: 11
+Ability: Quick Feet
+Nature: Brave
+- Fury Cutter
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bounsweet
+Level: 11
+Ability: Oblivious
+Nature: Jolly
+- Acupressure
+- Rapid Spin
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -11569,12 +11683,21 @@ Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Onix
+Level: 13
+Ability: Sturdy
+Nature: Jolly
+- Rock Slide
+
+Bulbasaur
+Level: 13
+Ability: Overgrow
+Nature: Jolly
+- Vine Whip
+- Growth
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -12996,12 +13119,20 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
 Magikarp
 Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Swift Swim
+Nature: Adamant
+- Bounce
+
+Wiglett
+Level: 9
+Ability: Gooey
+Nature: Adamant
+- Wrap
 
 === TRAINER_HAILEY ===
 Name: HAILEY
@@ -13879,16 +14010,22 @@ Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cufant
+Level: 13
+Ability: Heavy Metal
+Nature: Adamant
+- Heavy Slam
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swablu
+Level: 13
+Ability: Natural Cure
+Nature: Jolly
+- Tailwind
+- Roost
+- Fury Attack
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -13896,16 +14033,22 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Shroomish
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nacli
+Level: 13
+Ability: Sturdy
+Nature: Adamant
+- Smack Down
+- Dig
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mime Jr.
+Level: 13
+Ability: Filter
+Nature: Timid
+- Psybeam
+- Drain Punch
 
 === TRAINER_MELINA ===
 Name: MELINA

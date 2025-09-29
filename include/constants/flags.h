@@ -43,17 +43,18 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+// additional level cap flags
+#define FLAG_BEAT_PETALBURG_WOODS_AQUA_GRUNT        0x20 // flag for beating petalburg woods aqua grunt to increase level cap
+#define FLAG_STEVEN_GRANITE_CAVE_TALKED             0x21 // flag for talking to steven in granite cave to increase level cap
+#define FLAG_BEAT_ROUTE_110_RIVAL                   0x22 // flag for beating route 110 rival to increase level cap
+#define FLAG_BEAT_MT_CHIMNEY_MAXIE                  0x23 // flag for beating mt chimney maxie to increase level cap
+#define FLAG_BEAT_WEATHER_INST_RIVAL                0x24 // flag for beating weather institute rival to increase level cap
+#define FLAG_BEAT_MAGMA_HIDEOUT_MAXIE               0x25 // flag for beating magma hideout maxie to increase level cap
+#define FLAG_BEAT_AQUA_HIDEOUT_MATT                 0x26 // flag for beating aqua hideout matt to increase level cap
+#define FLAG_BEAT_SPACE_CENTER_MAXIE_TABITHA        0x27 // flag for beating space center maxie and tabitha to increase level cap
+#define FLAG_BEAT_SEAFLOOR_CAVERN_ARCHIE            0x28 // flag for beating seafloor cavern archie to increase level cap
+#define FLAG_BEAT_VICTORY_ROAD_WALLY                0x29 // flag for beating victory road wally to increase level cap
+#define FLAG_UNUSED_0X02B    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

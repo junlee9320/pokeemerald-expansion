@@ -1994,8 +1994,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_RARE_CANDY] =
     {
-        .name = _("Rare Candy"),
-        .pluralName = _("Rare Candies"),
+        .name = ITEM_NAME("Rare Candy"),
+        .pluralName = ITEM_PLURAL_NAME("Rare Candies"),
         .price = (I_PRICE >= GEN_7) ? 1 : 1,
         .description = COMPOUND_STRING(
             "Raises the level\n"
@@ -2270,7 +2270,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MAX_REPEL] =
     {
-        .name = _("Max Repel"),
+        .name = ITEM_NAME("Max Repel"),
         .price = (I_PRICE >= GEN_7) ? 1 : 1,
         .holdEffectParam = 250,
         .description = COMPOUND_STRING(
@@ -14592,7 +14592,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_PARTY_HEAL] =
     {
-        .name = _("Party Healer"),
+        .name = ITEM_NAME("Party Healer"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A magical big\n"
@@ -14608,7 +14608,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_INF_CANDY] =
     {
-        .name = _("Infinite Candy"),
+        .name = ITEM_NAME("Infinite Candy"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A magical candy\n"
@@ -14624,7 +14624,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_INF_REPEL] =
     {
-        .name = _("Infinite Repel"),
+        .name = ITEM_NAME("Infinite Repel"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A magical spray\n"

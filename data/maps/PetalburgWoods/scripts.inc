@@ -87,6 +87,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	removeobject LOCALID_PETALBURG_WOODS_GRUNT
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
+	setflag FLAG_BEAT_PETALBURG_WOODS_AQUA_GRUNT
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
 	giveitem ITEM_GREAT_BALL
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
