@@ -901,6 +901,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 
 	giveitem ITEM_PARTY_HEAL
 	giveitem ITEM_SUPER_ROD
+	giveitem ITEM_BERRY_JUICE, 4
 	
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
@@ -944,7 +945,9 @@ LittlerootTown_Text_ExplainRunningShoes:
 	.string "“Press the B Button while wearing these\n"
 	.string "RUNNING SHOES to run extra-fast!\p"
 	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "in the great outdoors!”\p"
+	.string "I also give you some other things\n"
+	.string "that you might find useful!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"

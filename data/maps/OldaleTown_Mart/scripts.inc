@@ -12,14 +12,22 @@ OldaleTown_Mart_EventScript_Clerk::
 	release
 	end
 
+OldaleTown_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart OldaleTown_Mart_Pokemart_2
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
 	.align 2
 OldaleTown_Mart_Pokemart_Basic:
 	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_MAX_REPEL
 	pokemartlistend
 
 OldaleTown_Mart_ExpandedItems::
@@ -35,8 +43,19 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	pokemartlistend
+
+OldaleTown_Mart_Pokemart_2:
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_RAWST_BERRY
+	.2byte ITEM_ASPEAR_BERRY
+	.2byte ITEM_LEPPA_BERRY
+	.2byte ITEM_ORAN_BERRY
+	.2byte ITEM_PERSIM_BERRY
 	pokemartlistend
 
 OldaleTown_Mart_EventScript_Woman::

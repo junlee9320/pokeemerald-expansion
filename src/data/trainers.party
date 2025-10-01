@@ -231,19 +231,19 @@ Music: Aqua
 Double Battle: Yes
 AI: Basic Trainer
 
-Wattrel @ Oran Berry
+Wattrel
 Level: 10
 Ability: Wind Power
-Nature: Timid
-- Electroweb
+Nature: Jolly
+- Spark
 - Tailwind
 
-Mudbray
+Cubone
 Level: 10
-Ability: Stamina
+Ability: Rock Head
 Nature: Adamant
-- Bulldoze
-- Rock Smash
+- Bone Rush
+- Double Kick
 
 Rookidee
 Level: 10
@@ -4830,35 +4830,31 @@ Music: Female
 Double Battle: Yes
 AI: Basic Trainer
 
-Silicobra @ Smooth Rock
+Silicobra @ Rindo Berry
 Level: 15
-Ability: Sand Spit
-Nature: Adamant
-- Glare
-- Dig
+Ability: Shed Skin
+Nature: Modest
+- Mud Shot
 
 Diglett_Alola @ Passho Berry
 Level: 15
-Ability: Sand Veil
+Ability: Tangling Hair
 Nature: Jolly
 - Metal Claw
-- Sand Tomb
 
 Tyrunt @ Salac Berry
-Level: 15
+Level: 16
 Ability: Strong Jaw
 Nature: Adamant
-- Thunder Fang
-- Ice Fang
-- Fire Fang
+- Bite
+- Rock Throw
 
 Minior @ Wacan Berry
-Level: 15
+Level: 16
 Ability: Shields Down
 Nature: Naive
 - Acrobatics
 - Rock Tomb
-- U-Turn
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -6052,7 +6048,7 @@ Level: 14
 Ability: Steam Engine
 Nature: Calm
 - Ancient Power
-- Incincerate
+- Incinerate
 
 === TRAINER_TOMMY ===
 Name: TOMMY
