@@ -2312,6 +2312,12 @@ bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
         }
     }
 
+    // for is no mon has move, but HM is in bag, not corresponding badge
+    if (gSpecialVar_Result == PARTY_SIZE && PlayerHasMove(move)) {  // If no mon have the move, but the player has the HM in bag, use the first mon
+            gSpecialVar_Result = 0;
+            gSpecialVar_0x8004 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES, NULL);
+    }
+
     return FALSE;
 }
 
