@@ -901,7 +901,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 
 	giveitem ITEM_PARTY_HEAL
 	giveitem ITEM_SUPER_ROD
-	giveitem ITEM_BERRY_JUICE, 4
+	giveitem ITEM_BERRY_JUICE, 2
 	
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
