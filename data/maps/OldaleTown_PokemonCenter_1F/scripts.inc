@@ -37,52 +37,6 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 	release
 	end
 
-OldaleTown_PokemonCenter_1F_EventScript_MoveRelearner::
-	lockall
-	faceplayer
-	waitmovement 0
-	goto OldaleTown_PokemonCenter_1F_EventScript_AskTeachMove
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_AskTeachMove::
-	msgbox OldaleTown_PokemonCenter_1F_Text_WantMeToTeachMove, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, OldaleTown_PokemonCenter_1F_EventScript_SeeYouLater
-	goto OldaleTown_PokemonCenter_1F_EventScript_ChooseMon
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_ChooseMon::
-	special ChooseMonForMoveRelearner
-	waitstate
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, OldaleTown_PokemonCenter_1F_EventScript_SeeYouLater
-	special IsSelectedMonEgg
-	goto_if_eq VAR_RESULT, TRUE, OldaleTown_PokemonCenter_1F_EventScript_CantTeachEgg
-	goto_if_eq VAR_0x8005, 0, OldaleTown_PokemonCenter_1F_EventScript_NoMoveToTeachMon
-	goto OldaleTown_PokemonCenter_1F_EventScript_ChooseMove
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_ChooseMove::
-	special TeachMoveRelearnerMove
-	waitstate
-	goto_if_eq VAR_0x8004, 0, OldaleTown_PokemonCenter_1F_EventScript_ChooseMon
-	goto OldaleTown_PokemonCenter_1F_EventScript_SeeYouLater
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_NoMoveToTeachMon::
-	msgbox OldaleTown_PokemonCenter_1F_Text_DontHaveMoveToTeachPokemon, MSGBOX_DEFAULT
-	goto OldaleTown_PokemonCenter_1F_EventScript_ChooseMon
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_CantTeachEgg::
-	msgbox OldaleTown_PokemonCenter_1F_Text_CantTeachEgg, MSGBOX_DEFAULT
-	goto OldaleTown_PokemonCenter_1F_EventScript_ChooseMon
-	end
-
-OldaleTown_PokemonCenter_1F_EventScript_SeeYouLater::
-	msgbox OldaleTown_PokemonCenter_1F_Text_SeeYouLater, MSGBOX_DEFAULT
-	releaseall
-	end
-
 OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
 	.string "That PC in the corner there is\n"
 	.string "for any POKéMON TRAINER to use.\p"
@@ -105,16 +59,3 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 	.string "The POKéMON WIRELESS CLUB on\n"
 	.string "the second floor was built recently.\p"
 	.string "I traded POKéMON right away.$"
-
-OldaleTown_PokemonCenter_1F_Text_WantMeToTeachMove:
-	.string "I'm the MOVE TUTOR.\n"
-	.string "Want me to teach a move?$"
-
-OldaleTown_PokemonCenter_1F_Text_DontHaveMoveToTeachPokemon:
-	.string "This POKéMON can't learn any moves.$"
-
-OldaleTown_PokemonCenter_1F_Text_SeeYouLater:
-	.string "See you later!$"
-
-OldaleTown_PokemonCenter_1F_Text_CantTeachEgg:
-	.string "I can't teach moves to an EGG.$"
